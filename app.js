@@ -10,6 +10,7 @@ const broj = 3123; //ne moze da se menja tokom vremena
 let mojeIme3 = "Radisa"; //moze da se menja tokom vremena
 
 const mojeIme4 = "hehe";
+
 let mojeIme5;
 
 let mojeIMe7 = null;
@@ -28,6 +29,12 @@ null; //
 // boolean; // true ili false
 // true === istina;
 // false === laz;
+
+const osobablabla = {
+	ime: "Milojica",
+};
+
+const niz = [2, 3, 4, 6, 7];
 
 const osoba1 = {
 	ime: "slobo", // 'ime'
