@@ -2,7 +2,7 @@
 
 let prviBroj = 5;
 const drugiBroj = "7";
-prviBroj += 3;
+prviBroj += 3; // prviBroj= prviBroj +3
 prviBroj = prviBroj + 3;
 drugiBroj -= 4;
 drugiBroj = drugiBroj - 4;
