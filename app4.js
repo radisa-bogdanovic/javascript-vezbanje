@@ -46,3 +46,6 @@ switch (dan) {
 
 // zadak domaci. Napraviti funkciju koja vraca poruke da li je broj paran i nije, pri tome gledaj da bude poruka i ako je nula
 //Kako mozemo da ispitamo da li je broj paran ili ne? Radili smo % ostatak? Znaci ako se podeli sa broj%2 a ostatak je 0 to znaci da je broj paran. U slucaju da ostatak nije nula onda je broj neparan. Imaj u vidu da stavis i uslov ako je broj nula...
+
+//napravit funkciju koja ce da prima 2 argumenta, prvi argument ce biti da li je korisnik polozio tipovanje (znace bice boolean vrednost true ili false) a druga vrednost ce biti broj godina. funkcija ce da ispituje da li je korisnik adekvatan kandidat za polaganje voznje. Ako je korisnip polozio tipovanje i ima vise ili jednako 18 godina onda mozemo console log korisnik moze da polaze ispit. Ako korisnik nije polozio tipovanje ili nema dovolno godina mozemo da napisemo poruku 'korisnik nije ispunio uslove za polaganje'
+//bonus!!!ako slobo zavrsi sve ovo i bude besan, moze dodati koji je to razlog sto ne moze da polaze voznju
