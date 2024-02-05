@@ -3,6 +3,7 @@
 let broj = 0;
 //funkcije
 let zbir = 123132;
+
 function NazivFunkcije(a, b, c) {
 	console.log(arguments);
 	let zbir = a + b + c;
@@ -25,8 +26,6 @@ const vrednostPrva = NazivFunkcije(5, 23, 34);
 const vrednostZbira = drugaFunkcija(44, 22, 33);
 
 console.log(`Vrednost zbira je ${vrednostPrva}`);
-
-trecaFunkcija();
 
 ///Za domaci : Napraviti objekat koji ima ime, prezime, godine listu srecnih brojeva
 // Napraviti funkciju koja ce da console.log('cao ja sam ime prezivam se prezime i imam godine, godina')

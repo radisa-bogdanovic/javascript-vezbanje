@@ -14,6 +14,7 @@ const mojeIme4 = "hehe";
 let mojeIme5;
 
 let mojeIMe7 = null;
+
 mojeIme5 = 434;
 
 console.log(mojeIme5);
@@ -23,7 +24,7 @@ mojeIme5 = "op't dodeljenjo";
 ("string"); // string- sve sto se nalazi u znacima navodnika "" '' ``
 ("d"); // char karakter jedan string
 32131.43; // brojevi
-("32131.43");
+("3123321");
 undefined; // to je kada varijabla nema vrednost
 null; //
 // boolean; // true ili false
@@ -33,8 +34,9 @@ null; //
 const osobablabla = {
 	ime: "Milojica",
 };
-
+//  [0][1][2][3][4]
 const niz = [2, 3, 4, 6, 7];
+const prviIzNiza = niz[0]; //2
 
 const osoba1 = {
 	ime: "slobo", // 'ime'

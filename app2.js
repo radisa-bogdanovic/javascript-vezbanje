@@ -34,7 +34,7 @@ console.log("ovo je obican tekst");
 const daLiJeIstina = true;
 const daLiJeLaz = false;
 
-console.log(!daLiJeLaz && daLiJeIstina && true && false); //i
+console.log(!daLiJeLaz && daLiJeIstina && true && false); //i and
 
 console.log(daLiJeLaz || daLiJeIstina); //ili
 
