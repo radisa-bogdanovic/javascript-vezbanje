@@ -1,6 +1,7 @@
-// for (let i = 1; i < 10; i++) {
-// 	console.log(i);
-// }
+for (let i = 1; i < 10; i++) {
+	//i=i+1
+	console.log(i);
+}
 
 //while petlja
 let i = 0;
