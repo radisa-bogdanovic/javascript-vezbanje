@@ -1,7 +1,6 @@
 "use strickt";
 
 const kontejner = document.getElementById("kontejner");
-console.log(kontejner);
 
 const listaKorisnika = [
 	"Slobo",
