@@ -1,0 +1,30 @@
+.kontejner {
+	width: 700px;
+	position: relative;
+	border-radius: 10px;
+}
+.levoDeda,
+.desnoBaba {
+	width: 30px;
+	position: absolute;
+	height: 30px;
+	top: 50%;
+	border-radius: 50%;
+}
+
+.levoDeda {
+	left: 20px;
+}
+.levoDeda:hover,
+.desnoBaba:hover {
+	background-color: blueviolet;
+}
+.desnoBaba {
+	right: 20px;
+}
+/*  ako je element kvadratas znaci ima istu visinu i sirinu border-radius:50% ce napraviti krug */
+img {
+	width: 100%;
+	height: 300px;
+	border-radius: 10px;
+}
