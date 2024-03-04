@@ -7,8 +7,6 @@ localStorage.setItem("ime", "Slobodan");
 
 const ime = localStorage.getItem("ime"); ///getItem mi uzimamo tu vrednost iz localstorage (u zagrade ide key od te vrednosti)
 
-console.log(ime);
-
 localStorage.removeItem("ime"); ///uklonimo element iz localstorage
 // localStorage.clear(); //brise sve iz localStorage
 const ime2 = localStorage.getItem("ime");

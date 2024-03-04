@@ -10,6 +10,12 @@ let trenutniIndex = localStorage.getItem("index")
 	? +localStorage.getItem("index")
 	: 0;
 
+const pozicija = document.querySelector("#pozicija");
+const inputField = document.querySelector("input");
+const dodajClana = document.querySelector("#dodaj-clana");
+const poruka = document.querySelector("#poruka");
+
+console.log(poruka, dodajClana);
 //  null, undefined, false, 0 === false
 // if (true) {
 // 	("uradi ovo");
@@ -43,17 +49,21 @@ promeniSliku(trenutniIndex);
 
 listaKorisnika.forEach((korisnik, id) => {
 	const element = document.createElement("option"); //sa ovom metodom pravimo element i na kraju ga smestamo u element varijablu
-	element.textContent = id + 1 + " " + korisnik; // 1 + 1 + ' ' + 'Radisa'= 1 Radisa'
+	element.textContent = select.children.length + 1 + " " + korisnik; // 1 + 1 + ' ' + 'Radisa'= 1 Radisa'
 	select.appendChild(element); //appendChild metoda ubacuje neki element u drugi (kojiJeElement u pitanju)
 });
 
 function obrisiClana() {
 	select.remove(select.selectedIndex); /// select.selectedIndex = index tog odabranog clana
+	select.childNodes.forEach((child, id) => {
+		child.textContent = id + 1 + " " + child.textContent.split(" ")[1];
+	});
 }
 
 /////////////////////////////////////////////////////////
 
 function promeniSliku(index) {
+	pozicija.textContent = `${index + 1} / ${listaSlika.length}`;
 	localStorage.setItem("index", index);
 	image.setAttribute("src", listaSlika[index]); /// listaSlika[3]
 	localStorage.setItem("index", index);
@@ -82,6 +92,18 @@ desnoDugme.addEventListener("click", () => {
 		trenutniIndex++; ///trenutniIndex= trenutniINdex+1 ==> povecavamo broj za jedan
 	}
 	promeniSliku(trenutniIndex);
+});
+
+dodajClana.addEventListener("click", () => {
+	if (inputField.value.length < 3) {
+		poruka.textContent = "Polje ne moze biti manje od 3 karaktera!";
+	} else {
+		poruka.textContent = "";
+		const element = document.createElement("option");
+		element.textContent = select.children.length + 1 + " " + inputField.value;
+		select.appendChild(element);
+		inputField.value = "";
+	}
 });
 
 //ako znamo da ce za trenutniIndex-- ici ispod nule mi vracamo taj index na kraj da ne bismo dobili negativan index
