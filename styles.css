@@ -28,3 +28,10 @@ img {
 	height: 300px;
 	border-radius: 10px;
 }
+
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 16px;
+	padding: 16px;
+}
